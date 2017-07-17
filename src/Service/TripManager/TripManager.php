@@ -38,7 +38,7 @@ class TripManager
         }, $this->sortTransportations($transportations)), [AbstractTransportation::MESSAGE_FINAL_DESTINATION]);
 
         return array_reduce($messages, function (string $carry, string $message) {
-            return $carry . $this->getTranspotationMessageLine($message);
+            return $carry . $this->getTransportationMessageLine($message);
         }, '');
     }
 
@@ -48,7 +48,7 @@ class TripManager
      * @param $message Text of message.
      * @return string
      */
-    private function getTranspotationMessageLine(string $message)
+    private function getTransportationMessageLine(string $message)
     {
         static $lineNumber = 1;
         return sprintf("%d. %s", $lineNumber++, $message . PHP_EOL);

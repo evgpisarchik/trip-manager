@@ -4,6 +4,7 @@ namespace App\Tests\Unit\Service;
 
 use App\Entity\Transportation\Plane;
 use App\Entity\Transportation\Bus;
+use App\Entity\Transportation\TransportationInterface;
 use App\Service\TripManager\TripManager;
 use PHPUnit\Framework\TestCase;
 
@@ -41,8 +42,16 @@ class TripManagerTest extends TestCase
 
     public function testSortTransportations()
     {
-        $sortedTransportations = $this->tripManager->sortTransportations($this->transportations);
-        $this->assertInstanceOf(Plane::class, end($sortedTransportations));
+        /** @var  $previousTransportation TransportationInterface*/
+        $previousTransportation = null;
+        /** @var  $transportation TransportationInterface*/
+        foreach($this->tripManager->sortTransportations($this->transportations) as $transportation){
+            $this->assertInstanceOf(TransportationInterface::class, $transportation);
+            if (isset($previousTransportation)) {
+                $this->assertEquals($previousTransportation->getArrival(), $transportation->getDeparture());
+            }
+            $previousTransportation = $transportation;
+        }
     }
 
     public function testGetTranspotationsMessage()
