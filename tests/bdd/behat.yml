@@ -1,0 +1,6 @@
+default:
+    formatter:
+        name:               pretty
+        parameters:
+            output_styles:
+                comment: [ black, white, [ underscore ] ]

@@ -1,0 +1,12 @@
+[
+  {
+    "Departure": "B",
+    "Arrival": "C",
+    "Transportation": "Bus"
+  },
+  {
+    "Departure": "A",
+    "Arrival": "B",
+    "Transportation": "Bus"
+  }
+]

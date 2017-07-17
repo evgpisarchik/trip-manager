@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+use App\Component\DependencyInjection\DependencyInjection as DI;
+use App\Component\Console\Console;
+use App\Command\TripSorter\TripSorter;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+// register commands and run
+/** @var  $console Console */
+$console = DI::getInstanceOf(Console::class);
+$console->registerCommand(TripSorter::class)
+    ->run(array_slice($argv, 1));

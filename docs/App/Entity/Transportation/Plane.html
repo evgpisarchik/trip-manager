@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\Entity\Transportation\Plane | Trip Manager documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_Entity_Transportation_Plane" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Trip Manager documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../App/Entity.html">Entity</a></li><li class="backslash">\</li><li><a href="../../../App/Entity/Transportation.html">Transportation</a></li><li class="backslash">\</li><li>Plane</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Plane
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Plane</strong>        extends <a href="../../../App/Entity/Transportation/AbstractTransportation.html"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class Plane.</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>MESSAGE_FINAL_DESTINATION</td>
+                <td class="last">
+                    <p><em>Message returned when final destination reached.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DISCRIMINATOR_FIELD</td>
+                <td class="last">
+                    <p><em>Defines which field should be used as discriminator.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DISCRIMINATOR_MAP</td>
+                <td class="last">
+                    <p><em>Defines discriminator mapping.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MESSAGE</td>
+                <td class="last">
+                    <p><em>General message of the transportation.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MESSAGE_BAGGAGE_TICKET</td>
+                <td class="last">
+                    <p><em>Message reporting about baggage.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MESSAGE_NO_BAGGAGE_TICKET</td>
+                <td class="last">
+                    <p><em>Message reporting that there is no baggage.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_departure">
+                                        protected                                        string
+                </td>
+                <td>$departure</td>
+                <td class="last">Point of departure.</td>
+                <td><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#property_departure"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrival">
+                                        protected                                        string
+                </td>
+                <td>$arrival</td>
+                <td class="last">Point of arrival.</td>
+                <td><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#property_arrival"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_transportationNumber">
+                                        protected                                        string
+                </td>
+                <td>$transportationNumber</td>
+                <td class="last">Number of transportation.</td>
+                <td><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#property_transportationNumber"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_seat">
+                                        protected                                        string
+                </td>
+                <td>$seat</td>
+                <td class="last">Seat info</td>
+                <td><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#property_seat"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_gate">
+                                        protected                                        string
+                </td>
+                <td>$gate</td>
+                <td class="last">Number of gate.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_baggage">
+                                        protected                                        string
+                </td>
+                <td>$baggage</td>
+                <td class="last">Baggage information.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDiscriminator">getDiscriminator</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getDiscriminator"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSeat">getSeat</a>()
+        
+                                            <p>Seat getter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getSeat"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Entity\Transportation\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSeat">setSeat</a>(string $seat)
+        
+                                            <p>Seat setter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_setSeat"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArrival">getArrival</a>()
+        
+                                            <p>Point of arrival getter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getArrival"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/Entity/Transportation/TransportationInterface.html"><abbr title="App\Entity\Transportation\TransportationInterface">TransportationInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setArrival">setArrival</a>(string $arrival)
+        
+                                            <p>Point of arrival setter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_setArrival"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDeparture">getDeparture</a>()
+        
+                                            <p>Point of departure getter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getDeparture"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/Entity/Transportation/TransportationInterface.html"><abbr title="App\Entity\Transportation\TransportationInterface">TransportationInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDeparture">setDeparture</a>(string $departure)
+        
+                                            <p>Point of departure setter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_setDeparture"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTransportationNumber">getTransportationNumber</a>()
+        
+                                            <p>Transportation number getter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getTransportationNumber"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Entity\Transportation\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTransportationNumber">setTransportationNumber</a>(string $transportationNumber)
+        
+                                            <p>Transportation number setter.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_setTransportationNumber"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGate">getGate</a>()
+        
+                                            <p>Gate getter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/Entity/Transportation/Plane.html"><abbr title="App\Entity\Transportation\Plane">Plane</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGate">setGate</a>(string $gate)
+        
+                                            <p>Gate setter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBaggage">getBaggage</a>()
+        
+                                            <p>Baggage info getter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/Entity/Transportation/Plane.html"><abbr title="App\Entity\Transportation\Plane">Plane</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBaggage">setBaggage</a>(string $baggage)
+        
+                                            <p>Baggage info setter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMessage">getMessage</a>()
+        
+                                            <p>Returns a message for the transportation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getDiscriminator">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getDiscriminator"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 64</div>
+        <code>        static            
+    <strong>getDiscriminator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSeat">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getSeat"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 75</div>
+        <code>                    string
+    <strong>getSeat</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Seat getter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSeat">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_setSeat"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 85</div>
+        <code>                    <abbr title="App\Entity\Transportation\$this">$this</abbr>
+    <strong>setSeat</strong>(string $seat)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Seat setter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$seat</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Entity\Transportation\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArrival">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getArrival"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 95</div>
+        <code>                    string
+    <strong>getArrival</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Point of arrival getter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setArrival">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_setArrival"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 105</div>
+        <code>                    <a href="../../../App/Entity/Transportation/TransportationInterface.html"><abbr title="App\Entity\Transportation\TransportationInterface">TransportationInterface</abbr></a>
+    <strong>setArrival</strong>(string $arrival)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Point of arrival setter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$arrival</td>
+                <td>Point of arrival name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/Entity/Transportation/TransportationInterface.html"><abbr title="App\Entity\Transportation\TransportationInterface">TransportationInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDeparture">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getDeparture"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 115</div>
+        <code>                    string
+    <strong>getDeparture</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Point of departure getter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDeparture">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_setDeparture"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 125</div>
+        <code>                    <a href="../../../App/Entity/Transportation/TransportationInterface.html"><abbr title="App\Entity\Transportation\TransportationInterface">TransportationInterface</abbr></a>
+    <strong>setDeparture</strong>(string $departure)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Point of departure setter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$departure</td>
+                <td>point of departure name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/Entity/Transportation/TransportationInterface.html"><abbr title="App\Entity\Transportation\TransportationInterface">TransportationInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTransportationNumber">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_getTransportationNumber"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 135</div>
+        <code>                    string
+    <strong>getTransportationNumber</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Transportation number getter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTransportationNumber">
+        <div class="location">in <a href="../../../App/Entity/Transportation/AbstractTransportation.html#method_setTransportationNumber"><abbr title="App\Entity\Transportation\AbstractTransportation">AbstractTransportation</abbr></a> at         line 145</div>
+        <code>                    <abbr title="App\Entity\Transportation\$this">$this</abbr>
+    <strong>setTransportationNumber</strong>(string $transportationNumber)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Transportation number setter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$transportationNumber</td>
+                <td>Transportation number info</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Entity\Transportation\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGate">
+        <div class="location">at         line 42</div>
+        <code>                    string
+    <strong>getGate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gate getter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGate">
+        <div class="location">at         line 52</div>
+        <code>                    <a href="../../../App/Entity/Transportation/Plane.html"><abbr title="App\Entity\Transportation\Plane">Plane</abbr></a>
+    <strong>setGate</strong>(string $gate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gate setter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$gate</td>
+                <td>Gate info.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/Entity/Transportation/Plane.html"><abbr title="App\Entity\Transportation\Plane">Plane</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBaggage">
+        <div class="location">at         line 62</div>
+        <code>                    string
+    <strong>getBaggage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Baggage info getter.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBaggage">
+        <div class="location">at         line 72</div>
+        <code>                    <a href="../../../App/Entity/Transportation/Plane.html"><abbr title="App\Entity\Transportation\Plane">Plane</abbr></a>
+    <strong>setBaggage</strong>(string $baggage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Baggage info setter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$baggage</td>
+                <td>baggage info.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/Entity/Transportation/Plane.html"><abbr title="App\Entity\Transportation\Plane">Plane</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMessage">
+        <div class="location">at         line 82</div>
+        <code>                    string
+    <strong>getMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a message for the transportation.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
