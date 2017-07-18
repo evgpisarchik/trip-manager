@@ -30,6 +30,5 @@ class TrainTest extends TestCase
         $message = $this->train->getMessage();
         $this->assertTrue(strlen($message) > 0);
         $this->assertContains($this->train->getSeat(), $message);
-
     }
 }

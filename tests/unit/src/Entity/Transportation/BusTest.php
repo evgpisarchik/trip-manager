@@ -28,6 +28,5 @@ class BusTest extends TestCase
         $message = $this->bus->getMessage();
         $this->assertTrue(strlen($message) > 0);
         $this->assertContains(Bus::MESSAGE_NO_SEAT, $message);
-
     }
 }

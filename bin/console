@@ -6,8 +6,12 @@ use App\Command\TripSorter\TripSorter;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-// register commands and run
 /** @var  $console Console */
 $console = DI::getInstanceOf(Console::class);
-$console->registerCommand(TripSorter::class)
+
+/** @var  $tripSorterCommand TripSorter */
+$tripSorterCommand = DI::getInstanceOf(TripSorter::class);
+
+// register commands and run
+$console->setRegistredCommands([$tripSorterCommand])
     ->run(array_slice($argv, 1));

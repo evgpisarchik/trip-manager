@@ -4,7 +4,7 @@ Feature: "TripSorter" console command testing
   passing input parameters to it
 
   Scenario: Sort unordered list of transitions
-    When I run "bin/console TripSorter tests/bdd/features/data/valid-boarding-cards.json"
+    When I run "bin/console trip-sorter tests/bdd/features/data/valid-boarding-cards.json"
     Then I should get:
       """
       1. Take the airport bus from A to B. No seat assignment.

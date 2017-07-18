@@ -13,4 +13,23 @@ interface CommandInterface
      * @return mixed
      */
     public function run();
+
+    /**
+     * Return command name used in terminal.
+     * @return string
+     */
+    public function getName(): string;
+
+    /**
+     * Arguments used to run the command.
+     * @param array ...$args
+     * @return mixed
+     */
+    public function setArgs(string...$args);
+
+    /**
+     * Returns output produced by the command.
+     * @return string
+     */
+    public function getOutput(): string;
 }

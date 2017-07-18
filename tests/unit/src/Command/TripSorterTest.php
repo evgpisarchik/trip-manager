@@ -13,6 +13,7 @@ use PHPUnit\Framework\TestCase;
 class TripSorterTest extends TestCase
 {
     const DUMMY_FILENAME = 'dummy_filename.txt';
+    const DUMMY_TRANSPOTATIONS_MESSAGE = 'dummy transpotations message';
 
     /**
      * @var $tripSorter TripSorter
@@ -21,12 +22,12 @@ class TripSorterTest extends TestCase
 
     public function setUp()
     {
-        $this->tripSorter = new TripSorter(static::DUMMY_FILENAME);
+        $this->tripSorter = new TripSorter();
     }
 
     public function testRun()
     {
-        // create tripSorter mock
+        /** @var  $tripSorterMock TripSorter */
         $tripSorterMock = $this->getMockBuilder(TripSorter::class)
             ->disableOriginalConstructor()
             ->setMethods(['deserializeTransportations'])
@@ -38,15 +39,16 @@ class TripSorterTest extends TestCase
             ->willReturn([]);
 
 
-        // create tripSorter mock
+        /** @var  $tripManagerMock TripManager */
         $tripManagerMock = $this->createMock(TripManager::class);
-        $tripManagerMockDummyOutput = 'dummy transpotations message';
         $tripManagerMock
             ->method('getTranspotationsMessage')
-            ->willReturn($tripManagerMockDummyOutput);
+            ->willReturn(static::DUMMY_TRANSPOTATIONS_MESSAGE);
 
-        $tripSorterMock->setTripManager($tripManagerMock);
+        $tripSorterMock->setTripManager($tripManagerMock)
+            ->setArgs(static::DUMMY_FILENAME)
+            ->run();
 
-        $this->assertEquals($tripManagerMockDummyOutput, $tripSorterMock->run());
+        $this->assertEquals(static::DUMMY_TRANSPOTATIONS_MESSAGE, $tripSorterMock->getOutput());
     }
 }

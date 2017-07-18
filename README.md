@@ -11,7 +11,7 @@ chmod +x bin/console
 ## Running
 run the following console command
 ```
-bin/console TripSorter misc/boarding-cards.json
+bin/console trip-sorter misc/boarding-cards.json
 ```
 
 ## Testing

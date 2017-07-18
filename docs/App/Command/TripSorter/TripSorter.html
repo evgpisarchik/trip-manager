@@ -127,6 +127,22 @@
 
             <table class="table table-condensed">
                     <tr>
+                <td class="type" id="property_name">
+                                        protected                                        
+                </td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_output">
+                                        protected                                        string
+                </td>
+                <td>$output</td>
+                <td class="last">Output produced by the command.</td>
+                <td><small>from&nbsp;<a href="../../../App/Component/Console/Command/AbstractCommand.html#property_output"><abbr title="App\Component\Console\Command\AbstractCommand">AbstractCommand</abbr></a></small></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_tripManager">
                                         protected                                        
                 </td>
@@ -173,6 +189,39 @@
         
                                             <p>Method used to perform operations of the command.</p>                </div>
                 <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Component/Console/Command/AbstractCommand.html#method_getName"><abbr title="App\Component\Console\Command\AbstractCommand">AbstractCommand</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setArgs">setArgs</a>(string $args)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOutput">getOutput</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/Component/Console/Command/AbstractCommand.html#method_getOutput"><abbr title="App\Component\Console\Command\AbstractCommand">AbstractCommand</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -236,16 +285,6 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(string $fileName)
-        
-                                            <p>TripSorter constructor.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     <a href="../../../App/Entity/Transportation/TransportationInterface.html"><abbr title="App\Entity\Transportation\TransportationInterface">TransportationInterface</abbr></a>[]
                 </div>
                 <div class="col-md-8 type">
@@ -273,7 +312,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_run">
-        <div class="location">at         line 45</div>
+        <div class="location">at         line 52</div>
         <code>                    mixed
     <strong>run</strong>()
         </code>
@@ -291,6 +330,100 @@
                     <table class="table table-condensed">
         <tr>
             <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../App/Component/Console/Command/AbstractCommand.html#method_getName"><abbr title="App\Component\Console\Command\AbstractCommand">AbstractCommand</abbr></a> at         line 32</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setArgs">
+        <div class="location">at         line 42</div>
+        <code>                    mixed
+    <strong>setArgs</strong>(string $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOutput">
+        <div class="location">in <a href="../../../App/Component/Console/Command/AbstractCommand.html#method_getOutput"><abbr title="App\Component\Console\Command\AbstractCommand">AbstractCommand</abbr></a> at         line 45</div>
+        <code>                    string
+    <strong>getOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
             <td></td>
         </tr>
     </table>
@@ -512,39 +645,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at         line 36</div>
-        <code>                    
-    <strong>__construct</strong>(string $fileName)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>TripSorter constructor.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$fileName</td>
-                <td>string Filename from which json is retrieved.</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_deserializeTransportations">
-        <div class="location">at         line 54</div>
+        <div class="location">at         line 62</div>
         <code>            protected        <a href="../../../App/Entity/Transportation/TransportationInterface.html"><abbr title="App\Entity\Transportation\TransportationInterface">TransportationInterface</abbr></a>[]
     <strong>deserializeTransportations</strong>()
         </code>
@@ -574,7 +676,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFileConents">
-        <div class="location">at         line 62</div>
+        <div class="location">at         line 70</div>
         <code>            protected        string
     <strong>getFileConents</strong>()
         </code>

@@ -24,18 +24,25 @@ class TripSorter extends AbstractCommand
     use SerializerAwareTrait;
 
     /**
+     * @inheritdoc
+     */
+    protected $name = 'trip-sorter';
+
+    /**
      * Filename from which json is retrieved.
      * @var string
      */
     protected $fileName;
 
     /**
-     * TripSorter constructor.
-     * @param $fileName string Filename from which json is retrieved.
+     * @inheritdoc
+     * @param array ...$args Name of file that has cards information.
+     * @return $this;
      */
-    public function __construct(string $fileName)
+    public function setArgs(string...$args)
     {
-        $this->fileName = $fileName;
+        list($this->fileName) = $args;
+        return $this;
     }
 
     /**
@@ -44,7 +51,8 @@ class TripSorter extends AbstractCommand
      */
     public function run()
     {
-        return $this->tripManager->getTranspotationsMessage($this->deserializeTransportations());
+        $this->output = $this->tripManager->getTranspotationsMessage($this->deserializeTransportations());
+        return $this;
     }
 
     /**
